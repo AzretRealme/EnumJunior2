@@ -1,9 +1,7 @@
 package child;
 
-
 import parent.Employee;
-import parent.Rank;
-import parent.Sphere;
+
 
 public class CEO extends Employee {
   boolean hasCompanyCar;
@@ -12,17 +10,14 @@ public class CEO extends Employee {
 
     }
 
-    public CEO(Rank rank, Sphere sphere, String name, int age, double salary) {
-        super(rank, sphere, name, age, salary);
+    public CEO( String name, int age, double salary) {
+        super(name, age, salary);
     }
 
    public boolean isHasCompanyCar() {
       return hasCompanyCar;
     }
-
-   public void setHasCompanyCar(boolean hasCompanyCar) {
-      this.hasCompanyCar = hasCompanyCar;
-  }
+    
 
     public void goPublic(){
       // super.Work();
@@ -41,3 +36,4 @@ public class CEO extends Employee {
        System.out.println(getName());
    }
 }
+
